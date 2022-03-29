@@ -1,5 +1,7 @@
 # Generics
 
+[![.github/workflows/ci.yaml](https://github.com/quentinlesceller/generics/actions/workflows/ci.yaml/badge.svg)](https://github.com/quentinlesceller/generics/actions/workflows/ci.yaml)
+
 Package `generics` contains type-safe golang struct based on standard library struct.
 
 - [SyncMap](syncmap.go) contains a type safe implementation of golang [`sync.Map`](https://pkg.go.dev/sync?utm_source=godoc#Map).
@@ -25,12 +27,12 @@ func main() {
     var m generics.SyncMap[string, int32]
 
     // Store some data
-	m.Store("hello", 1)
-	m.Store("world", 2)
+    m.Store("hello", 1)
+    m.Store("world", 2)
 
     // Range over it
-	m.Range(func(k string, v int32) bool {
-		fmt.Println(k, v)
-		return true
-	})
+    m.Range(func(k string, v int32) bool {
+        fmt.Println(k, v)
+        return true
+    })
  }
