@@ -1,6 +1,7 @@
 # Generics
 
 [![.github/workflows/ci.yaml](https://github.com/quentinlesceller/generics/actions/workflows/ci.yaml/badge.svg)](https://github.com/quentinlesceller/generics/actions/workflows/ci.yaml)
+[![Go Reference](https://pkg.go.dev/badge/github.com/quentinlesceller/generics.svg)](https://pkg.go.dev/github.com/quentinlesceller/generics)
 
 Package `generics` contains type-safe golang struct based on standard library struct.
 
